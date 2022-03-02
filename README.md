@@ -1,2 +1,2 @@
 # python_sandbox
-Python tests for samba / ldap use
+Python tests for samba(smb) / ldap use
