@@ -1,0 +1,35 @@
+#!/usr/bin/python3
+#a_string = input("Tell me your name: ")
+#a_number_1 = input("Tell me number 1: ")
+#a_number_2 = input("Tell me number 2: ")
+#a_boolean = False
+#result = float(a_number_1) + float(a_number_2)
+
+#print(f"{result}")
+# am besten so: ist schnell und es ist egal, ob int, str, float
+#print(f"A boolean: {a_string} for {result} and done")
+
+import testmodule
+
+items = ["null","eins","zwei"]
+items.append("drei")
+items.remove("eins")
+print(items)
+print(f"{len(items)} Elements")
+
+if "drei" in items:
+    print("Found")
+else:
+   print("not found")
+
+
+   
+#def print_data(item,name='default_name'):
+#    """Ausgabe von Daten"""
+#    print(f"{name} hat {len(name)} Buchstaben")
+#    print(f"{item} hat {len(item)} Buchstaben")
+
+print()
+print_data(name="Test",item="Computer")
+print()
+print_data(item="MyItem")   
