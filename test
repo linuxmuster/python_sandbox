@@ -15,21 +15,17 @@ items = ["null","eins","zwei"]
 items.append("drei")
 items.remove("eins")
 print(items)
-print(f"{len(items)} Elements")
+#print(f"{len(items)} Elements")
 
 if "drei" in items:
     print("Found")
 else:
    print("not found")
 
+# complex datastructure
 
    
-#def print_data(item,name='default_name'):
-#    """Ausgabe von Daten"""
-#    print(f"{name} hat {len(name)} Buchstaben")
-#    print(f"{item} hat {len(item)} Buchstaben")
-
 print()
-print_data(name="Test",item="Computer")
+testmodule.print_data(name="Test",item="Computer")
 print()
-print_data(item="MyItem")   
+testmodule.print_data(item="MyItem")   
