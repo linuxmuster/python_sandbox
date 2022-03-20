@@ -28,4 +28,13 @@ else:
 print()
 testmodule.print_data(name="Test",item="Computer")
 print()
-testmodule.print_data(item="MyItem")   
+return_value=testmodule.print_data(item="MyItem")   
+print(f"The function returned {return_value}")
+
+
+
+data={'name': 'Peter',
+      'morning_greeting': 'Morning Pete!',
+      'evening_greeting': 'Good Evening Peter!'}
+
+testmodule.greeting(data)
