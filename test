@@ -32,9 +32,26 @@ return_value=testmodule.print_data(item="MyItem")
 print(f"The function returned {return_value}")
 
 
+users = {} # creates dictionary
+users['sAMAccountName'] = {} # creates dictionary
 
-data={'name': 'Peter',
-      'morning_greeting': 'Morning Pete!',
-      'evening_greeting': 'Good Evening Peter!'}
+# first user
+username = 'richi23'
+users['sAMAccountName'][username] = {} # creates key, must be there
+users['sAMAccountName'][username]['lastname'] = 'Blackmore'
+users['sAMAccountName'][username]['firstname'] = 'Ritchie'
+users['sAMAccountName'][username]['aliases'] = ['Rich','Richard']
+users['sAMAccountName'][username]['morning_greeting'] = 'Morning Ritchie!'
+users['sAMAccountName'][username]['evening_greeting'] = 'Good evening Mr. Blackmore'
 
-testmodule.greeting(data)
+# second user
+username = 'jon23'
+users['sAMAccountName'][username] = {} # creates key, must be there
+users['sAMAccountName'][username]['lastname'] = 'Lord'
+users['sAMAccountName'][username]['firstname'] = 'Jon'
+users['sAMAccountName'][username]['aliases'] = ['John','Johnny']
+users['sAMAccountName'][username]['morning_greeting'] = 'Morning Jon!'
+users['sAMAccountName'][username]['evening_greeting'] = 'Good evening Mr. Lord'
+
+testmodule.greeting(users,'richi23')
+testmodule.greeting(users,'jon23')
