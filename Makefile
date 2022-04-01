@@ -35,6 +35,8 @@ help:
 install:
 	@install -d -m755 -oroot -groot $(PYTHON_MODULE_DIR)
 	@install -m644 -oroot -groot ./module/python_sandbox_module.py $(PYTHON_MODULE_DIR)
+	@install -m755 -oroot -groot ./script/python_sandbox $(PYTHON_BINARY_DIR)
 
 uninstall:
 	@rm $(PYTHON_MODULE_DIR)python_sandbox_module.py
+	@rm $(PYTHON_BINARY_DIR)python_sandbox
