@@ -9,7 +9,9 @@
 # am besten so: ist schnell und es ist egal, ob int, str, float
 #print(f"A boolean: {a_string} for {result} and done")
 
-import testmodule
+#import testmodule
+import configparser
+import python_sandbox_module
 
 items = ["null","eins","zwei"]
 items.append("drei")
@@ -26,9 +28,9 @@ else:
 
    
 print()
-testmodule.print_data(name="Test",item="Computer")
+python_sandbox_module.print_data(name="Test",item="Computer")
 print()
-return_value=testmodule.print_data(item="MyItem")   
+return_value=python_sandbox_module.print_data(item="MyItem")   
 print(f"The function returned {return_value}")
 
 
@@ -53,5 +55,8 @@ users['sAMAccountName'][username]['aliases'] = ['John','Johnny']
 users['sAMAccountName'][username]['morning_greeting'] = 'Morning Jon!'
 users['sAMAccountName'][username]['evening_greeting'] = 'Good evening Mr. Lord'
 
-testmodule.greeting(users,'richi23')
-testmodule.greeting(users,'jon23')
+python_sandbox_module.greeting(users,'richi23')
+python_sandbox_module.greeting(users,'jon23')
+
+print ("Listing:")
+dir()
