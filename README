@@ -1,0 +1,8 @@
+Test for webui:
+
+1) Checkout python_sandbox
+2) sudo make install
+3) Try to load module from webui
+   import python_sandbox_module
+
+4) call module from webui

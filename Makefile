@@ -25,10 +25,10 @@ help:
 	@echo '   make help'
 	@echo '      show this help'
 	@echo ' '
-	@echo '   make install'
+	@echo '   sudo make install'
 	@echo '      install module and script'
 	@echo ' '
-	@echo '   make uninstall'
+	@echo '   sudo make uninstall'
 	@echo '      uninstall module and script'
 	@echo ' '
 
